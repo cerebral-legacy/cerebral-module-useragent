@@ -1,6 +1,6 @@
 export default function parseUserAgent ({module}) {
   Object.keys(module.meta.options.parse)
-  .filter(key => isEnabled)
+  .filter(isEnabled)
   .forEach(key => {
     const parseFunction = getParseFunction(key, module)
 
@@ -22,9 +22,5 @@ function getParseFunction (prop, module) {
 }
 
 function getParseFunctionName (prop) {
-  if (prop.length <= 3) {
-    return `get${prop.toUpperCase()}`
-  }
-
   return `get${prop.charAt(0).toUpperCase() + prop.slice(1)}`
 }

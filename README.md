@@ -4,7 +4,7 @@ A Cerebral module for everything user agent.
 
 - Window size & orientation
 - Browser, device & OS detection
-- Media queries (comming soon)
+- Media queries
 - Feature detection (comming soon)
 
 ## Install
@@ -19,7 +19,12 @@ npm install --save cerebral-module-useragent
 import controller from './controller'
 import Useragent form 'cerebral-module-useragent'
 
-const useragent = Useragent()
+const useragent = Useragent({
+  small: '(min-width: 600px)',
+  medium: '(min-width: 1024px)',
+  large: '(min-width: 1440px)',
+  portrait: '(orientation: portrait)'
+})
 
 controller.modules({
   useragent
@@ -49,7 +54,13 @@ The module exposes all the user agent information in your state model.
       "width": 1920,
       "height": 1080,
       "orientation": "landscape"
-    }
+    },
+    "media": {
+      "small": true,
+      "medium": true,
+      "large": false,
+      "portrait": false
+    },
   }
 }
 ```
@@ -74,4 +85,5 @@ controller.modules({
 })
 ```
 
-Those are the defaults. You can selectively disable any of these features.
+> Those are the defaults - you can selectively disable any of these features.<br>
+> By default there won't be any media queries. You have to define them from scratch.
