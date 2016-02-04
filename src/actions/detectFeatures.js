@@ -1,12 +1,16 @@
-export default function detectFeatures ({module}) {
+import objectPath from 'object-path'
+
+export default function detectFeatures ({state, services, module}) {
   const options = module.meta.options.feature
+  const uaFeatures = objectPath.get(services, [...module.path, 'feature'])
+  const moduleState = state.select(module.path)
 
   let featureMap = {}
 
-  Object.keys(module.services.feature)
+  Object.keys(uaFeatures)
   .filter(isEnabled)
   .reduce((result, featureName) => {
-    result[featureName] = module.services.feature[featureName]
+    result[featureName] = uaFeatures[featureName]
     return result
   }, featureMap)
 
@@ -31,5 +35,5 @@ export default function detectFeatures ({module}) {
     return typeof options[featureName] === 'function'
   }
 
-  module.state.set(['feature'], featureMap)
+  moduleState.set(['feature'], featureMap)
 }
