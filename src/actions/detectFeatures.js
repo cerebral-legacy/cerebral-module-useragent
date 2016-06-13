@@ -10,6 +10,7 @@ export default function detectFeatures (context) {
   let featureMap = {}
 
   Object.keys(uaFeatures)
+  .filter(isTestResult)
   .filter(isEnabled)
   .reduce((result, featureName) => {
     result[featureName] = uaFeatures[featureName]
@@ -35,6 +36,10 @@ export default function detectFeatures (context) {
 
   function isCustomTest (featureName) {
     return typeof feature[featureName] === 'function'
+  }
+
+  function isTestResult (featureName) {
+    return typeof uaFeatures[featureName] === 'boolean'
   }
 
   moduleState.set(['feature'], featureMap)
