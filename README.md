@@ -2,6 +2,10 @@
 
 A Cerebral module for everything user agent.
 
+This package is compatible with Cerebral 1.x.
+The current cerebral-module-useragent package for Cerebral 2
+has moved to the [Cerebral Monorepo](https://github.com/cerebral/cerebral/tree/master/packages/cerebral-module-useragent#readme).
+
 [![NPM version][npm-image]][npm-url]
 [![Commitizen friendly][commitizen-image]][commitizen-url]
 [![Semantic Release][semantic-release-image]][semantic-release-url]
