@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cerebral/cerebral-module-useragent.git"
+    "url": "https://github.com/cerebral-legacy/cerebral-module-useragent.git"
   },
   "keywords": [
     "cerebral",
@@ -23,9 +23,9 @@
   "author": "Max Frigge <maxfrigge@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cerebral/cerebral-module-useragent/issues"
+    "url": "https://github.com/cerebral-legacy/cerebral-module-useragent/issues"
   },
-  "homepage": "https://github.com/cerebral/cerebral-module-useragent#readme",
+  "homepage": "https://github.com/cerebral-legacy/cerebral-module-useragent#readme",
   "dependencies": {
     "101": "^1.5.0",
     "feature.js": "^1.0.0",
