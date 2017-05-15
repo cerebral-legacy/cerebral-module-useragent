@@ -3,8 +3,7 @@
 A Cerebral module for everything user agent.
 
 This package is compatible with Cerebral 1.x.
-The current cerebral-module-useragent package for Cerebral 2
-has moved to the [Cerebral Monorepo](https://github.com/cerebral/cerebral/tree/master/packages/cerebral-module-useragent#readme).
+For Cerebral 2 use [@cerebral/useragent](https://github.com/cerebral/cerebral/tree/master/packages/useragent#readme).
 
 [![NPM version][npm-image]][npm-url]
 [![Commitizen friendly][commitizen-image]][commitizen-url]
@@ -15,7 +14,7 @@ has moved to the [Cerebral Monorepo](https://github.com/cerebral/cerebral/tree/m
 React view package for Cerebral
 
 ### How to use
-Go to [http://www.cerebraljs.com/documentation/cerebral-module-useragent](http://www.cerebraljs.com/documentation/cerebral-module-useragent)
+Go to [http://cerebral-website.herokuapp.com/documentation/cerebral-module-useragent](http://cerebral-website.herokuapp.com/documentation/cerebral-module-useragent)
 
 ## User agent parser
 
