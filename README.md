@@ -3,7 +3,7 @@
 A Cerebral module for everything user agent.
 
 This package is compatible with Cerebral 1.x.
-For Cerebral 2 use [@cerebral/useragent](https://github.com/cerebral/cerebral/tree/master/packages/useragent#readme).
+For Cerebral 2 use [@cerebral/useragent](https://github.com/cerebral/cerebral/blob/master/packages/node_modules/%40cerebral/useragent#readme).
 
 [![NPM version][npm-image]][npm-url]
 [![Commitizen friendly][commitizen-image]][commitizen-url]
